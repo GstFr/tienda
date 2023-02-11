@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import fondoindex2 from '../src/video/fondoindex2.mp4'
+import fondo1 from './video/fondo1.mp4'
 
 function App() {
   return (
     <div className="App">
 
-<video autoPlay loop
-style={{
-position: "fixed",
-minWidth: "100%",
-minHeight: "100%",
-top: "50%",
-left:"50%",}}>
-
-</video>
-
-
-
       <header className="App-header">
       
+      <video autoPlay loop src={fondo1}
+
+style={{
+  objectFit: 'cover',
+    minWidth: '100%',
+   // minHeight: '100%',
+  
+    position: 'absolute',
+    zIndex: '-1'
+}}>
+</video>
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
