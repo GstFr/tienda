@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import fondo1 from 
+import fondo1 from './fondo1.mp4'
 function App() {
   return (
     <div className="App">
