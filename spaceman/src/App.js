@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import fondo1 from './video/fondo1.mp4'
-
+import fondo1 from 
 function App() {
   return (
     <div className="App">
@@ -9,16 +8,19 @@ function App() {
       <header className="App-header">
       
       <video autoPlay loop src={fondo1}
+      
+      
+      style={{
+        objectFit: 'cover',
+          minWidth: '100%',
+          minHeight: '100%',
+          position: 'absolute',
+          zIndex: '-1',
+      }}>
 
-style={{
-  objectFit: 'cover',
-    minWidth: '100%',
-   // minHeight: '100%',
-  
-    position: 'absolute',
-    zIndex: '-1'
-}}>
+
 </video>
+
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
