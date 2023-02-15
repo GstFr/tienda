@@ -1,15 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import fondoindex1 from "./fondo1.mp4";
-import nav from "./nav"
-import boton from "./boton";
+import Fondoindex1 from "./fondo1.mp4";
+import Nav from "./nav"
+import Boton from "./boton";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 
-        <video autoPlay loop src={fondoindex1}
+        <video autoPlay loop src={Fondoindex1}
           
           style={{
             objectFit: "cover",
@@ -21,13 +21,13 @@ function App() {
 
         ></video>
 
+<Nav></Nav>
+
+      <Boton></Boton>
 
       </header>
 
-      <nav/>
-
-      <boton/>
-
+      
       
     </div>
   );
