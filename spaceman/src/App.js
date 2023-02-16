@@ -1,34 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Fondoindex1 from "./fondo1.mp4";
-import Nav from "./nav"
-import Boton from "./boton";
+
+import Boton from "./componentes/boton/boton";
+import BarraNav from "./componentes/nav/nav";
+import Carrito from "./componentes/carrito/carrito";
+import listaItems from "./componentes/ListaItems/lista";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <video className="video" autoPlay loop src={Fondoindex1}></video>
+        <BarraNav></BarraNav>
 
-        <video autoPlay loop src={Fondoindex1}
-          
-          style={{
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            zIndex: "-1",
-          }}
-
-        ></video>
-
-<Nav></Nav>
-
-      <Boton></Boton>
-
+        <Boton></Boton>
+        <listaItems greeting={'Bienvenidos terricolas'}></listaItems> 
       </header>
-
-      
-      
     </div>
   );
 }

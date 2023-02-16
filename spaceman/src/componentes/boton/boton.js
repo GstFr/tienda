@@ -1,10 +1,11 @@
+import "./boton.css"
 import Button from 'react-bootstrap/Button';
 
 function boton() {
   return (
     <>
       
-      <Button variant="outline-danger">Entrar</Button>{' '}
+      <Button className="boton" variant="outline-danger">Entrar</Button>{' '}
       
     </>
   );
