@@ -5,9 +5,9 @@ import "./carrito.css"
 
 function Carrito() {
     return (
-      <a href="#" class="cart">
-        <BsCart4 className="icono" />
-        <span class="badge">4</span>
+      <a href="#" className='cart'>
+        <BsCart4 className="icono"/>
+        <span className="badge">4</span>
       </a>
     );
   }
