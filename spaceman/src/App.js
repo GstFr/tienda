@@ -4,7 +4,7 @@ import Fondoindex1 from "./fondo1.mp4";
 import Boton from "./componentes/boton/boton";
 import BarraNav from "./componentes/nav/nav";
 import Carrito from "./componentes/carrito/carrito";
-import listaItems from "./componentes/ListaItems/lista";
+import listaItems from "./componentes/listaItems/lista";
 
 function App() {
   return (
