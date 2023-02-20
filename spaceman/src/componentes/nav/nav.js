@@ -1,38 +1,31 @@
 import "./nav.css";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Carrito from "../carrito/carrito.js";
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function BarraNav() {
   return (
-    <Navbar className="navBar"  >
-      
-          
-
-            <div className="izquierda">
-              <NavDropdown title="MENU" id="basic-nav-dropdown">
-                <ul>
-                <li><NavDropdown.Item href="#action/3.1">
-                  Sobre nosotros
-                </NavDropdown.Item></li>
-                <li><NavDropdown.Item href="#action/3.2">
-                  Menu de razas
-                </NavDropdown.Item></li>
-                <li><NavDropdown.Item href="#action/3.3">
-                  Mis compras
-                </NavDropdown.Item></li>
-                </ul>
-              </NavDropdown>
-            </div>
-            
-            <div className="derecha">
-              <Carrito></Carrito>
-            </div>
-          
+    <Navbar  >
+      <Container className="navBar">
+      <Nav className="derecha">
        
-     
+            <NavDropdown title="Semillas" id="collasible-nav-dropdown">
+              <NavDropdown.Item >Automáticas</NavDropdown.Item>
+              <NavDropdown.Item >Fotoperiodicas</NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Link >Quiénes somos</Nav.Link>
+            <Nav.Link >Contactanos</Nav.Link>
+          </Nav>
+
+          <Nav className="derecha">
+            <Nav.Link ><Carrito></Carrito></Nav.Link>
+            
+          </Nav>
+       
+      </Container>
     </Navbar>
   );
 }

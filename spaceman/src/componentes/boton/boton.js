@@ -1,29 +1,37 @@
 import "./boton.css"
 import Button from 'react-bootstrap/Button';
 import 'animate.css';
+import Swal from 'sweetalert2'
+import "./fondoalert.PNG"
 
-function boton() {
+function Boton() {
+  const alertHandler = () => {
+    Swal.fire({
+      title: 'Para ingresar debes ser mayor de 18 años y tener REPROCAN activo',
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Confirmado',
+      denyButtonText: `No tengo REPROCAN`,
+      background:'img fondoalert.PNG'
+    }).then((result) => {
+      
+      if (result.isConfirmed) {
+        Swal.fire('Bienvenido', '', 'success')
+
+      } else if (result.isDenied) {
+        Swal.fire('Contactanos por instagram a Spaceman', '', 'info')
+      }
+    })
+  }
+  
   return (
     <>
       
-      <Button className="boton" variant="outline-danger">Entrar</Button>{' '}
-      boton.addEventListener("click", function () {
-      Swal.fire({
-  title: 'Do you want to save the changes?',
-  showDenyButton: true,
-  showCancelButton: true,
-  confirmButtonText: 'Save',
-  denyButtonText: `Don't save`,
-}).then((result) => {
-  /* Read more about isConfirmed, isDenied below */
-  if (result.isConfirmed) {
-    Swal.fire('Saved!', '', 'success')
-  } else if (result.isDenied) {
-    Swal.fire('Changes are not saved', '', 'info')
-  }
-})}
+      <Button className="boton"  onClick={alertHandler}>Entrar</Button>
+    
+      
     </>
   );
 }
 
-export default boton;
+export default Boton;
