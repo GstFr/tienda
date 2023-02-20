@@ -1,3 +1,4 @@
+
 .boton {
     align-content: center;
     position: relative;
@@ -5,4 +6,6 @@
     background-color: rgb(62, 209, 17);
     font-size: xx-large ;
     top: -5px;
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }

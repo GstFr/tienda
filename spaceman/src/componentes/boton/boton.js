@@ -1,5 +1,6 @@
 import "./boton.css"
 import Button from 'react-bootstrap/Button';
+import 'animate.css';
 
 function boton() {
   return (
