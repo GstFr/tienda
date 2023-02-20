@@ -5,22 +5,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 function BarraNav() {
   return (
     <Navbar  >
-      <Container className="navBar">
-      <Nav className="derecha">
+      <Container className="navBar" >
+      <Nav className=" navbar-dark bg-dark" >
        
-            <NavDropdown title="Semillas" id="collasible-nav-dropdown">
+            <NavDropdown title="Semillas" id="dropdown-autoclose-true ">
               <NavDropdown.Item >Automáticas</NavDropdown.Item>
               <NavDropdown.Item >Fotoperiodicas</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link >Quiénes somos</Nav.Link>
             <Nav.Link >Contactanos</Nav.Link>
-          </Nav>
-
-          <Nav className="derecha">
+        
             <Nav.Link ><Carrito></Carrito></Nav.Link>
             
           </Nav>
@@ -31,3 +31,5 @@ function BarraNav() {
 }
 
 export default BarraNav;
+
+

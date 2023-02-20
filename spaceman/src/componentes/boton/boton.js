@@ -2,7 +2,7 @@ import "./boton.css"
 import Button from 'react-bootstrap/Button';
 import 'animate.css';
 import Swal from 'sweetalert2'
-import "./fondoalert.PNG"
+
 
 function Boton() {
   const alertHandler = () => {
@@ -12,7 +12,14 @@ function Boton() {
       showCancelButton: true,
       confirmButtonText: 'Confirmado',
       denyButtonText: `No tengo REPROCAN`,
-      background:'img fondoalert.PNG'
+      background: '#fff url(./fondoalert.jpeg)',
+      backdrop: `
+      rgba(0,0,123,0.4)
+      url("./fondoalert.jpeg")
+      left top
+      no-repeat
+      `,
+      
     }).then((result) => {
       
       if (result.isConfirmed) {
