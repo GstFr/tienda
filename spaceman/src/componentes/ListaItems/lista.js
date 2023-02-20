@@ -1,6 +1,6 @@
 import "./lista.css";
 
-function listaItems({greeting}) {
+function ItemListContainer({greeting}) {
   return (
     <div className="lista">
       <h2>{greeting}</h2>
@@ -8,4 +8,4 @@ function listaItems({greeting}) {
   );
 }
 
-export default listaItems;
+export default  ItemListContainer;
