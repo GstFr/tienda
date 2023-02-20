@@ -7,6 +7,7 @@ function boton() {
     <>
       
       <Button className="boton" variant="outline-danger">Entrar</Button>{' '}
+      boton.addEventListener("click", function () {
       Swal.fire({
   title: 'Do you want to save the changes?',
   showDenyButton: true,
@@ -20,7 +21,7 @@ function boton() {
   } else if (result.isDenied) {
     Swal.fire('Changes are not saved', '', 'info')
   }
-})
+})}
     </>
   );
 }
