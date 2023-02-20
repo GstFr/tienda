@@ -9,12 +9,14 @@ import  ItemListContainer from "./componentes/listaItems/lista";
 function App() {
   return (
     <div className="App">
-        <BarraNav/>
+       
       <header className="App-header">
+      <BarraNav/>
         <video className="video" autoPlay loop src={Fondoindex1}/>
         <Boton/>
-      </header>
         <ItemListContainer greeting={'Bienvenidos terricolas'}/> 
+      </header>
+        
     </div>
   );
 }

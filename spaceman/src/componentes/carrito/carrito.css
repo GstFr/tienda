@@ -5,17 +5,17 @@
 }
     .icono {
       font-size: 24px;
-      color: #000;
+      color: rgb(62, 209, 17);
     }
   
     .badge {
       position: absolute;
-      top: -10px;
-      right: -10px;
+      top: 10px;
+      right: 10px;
       padding: 1px 5px;
       border-radius: 50%;
-      background: red;
-      color: white;
-      font-size: 14px;
+      
+      color: rgb(189, 13, 13);
+      font-size: 30px;
     }
   
