@@ -4,16 +4,16 @@ import NavBar from "../src/componentes/navbar/navbar";
 import Fondo1 from "./fondo1.mp4"
 import Boton from "../src/componentes/boton/boton";
 import  ItemListContainer from "./componentes/ItemListContainer/lista";
-
+import Navbar from "../src/componentes/navbar/navbar"
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-
+    
+<Navbar/>
       <header className="App-header">
-     
+       
         <video className="video" autoPlay muted loop src={Fondo1} />
         <br/>
         <Boton />

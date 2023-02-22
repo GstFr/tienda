@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import 'animate.css';
 import Swal from 'sweetalert2'
 
+
+
 function Boton() {
 
   const alertHandler = () => {
@@ -19,6 +21,7 @@ function Boton() {
     }).then((result) => {
       
       if (result.isConfirmed) {
+      
         Swal.fire('Bienvenido', '', 'success')
 
       } else if (result.isDenied) {
