@@ -1,0 +1,10 @@
+
+.boton {
+    align-content: center;
+    position: relative;
+    color: rgb(0, 0, 0);
+    background-color: rgb(62, 209, 17);
+    font-size: xx-large ;
+    top: -5px;
+    animation: flash; 
+  animation-duration: 3s;}
