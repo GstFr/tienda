@@ -30,8 +30,9 @@
   align-items: center;
  
 }
-  
-
+  .titulo{
+    
+  }
 .video {
   object-fit: cover;
   width: 100%;

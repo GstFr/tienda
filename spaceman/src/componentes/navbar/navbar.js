@@ -1,6 +1,5 @@
-import Button from 'react-bootstrap/Button';
+import "./navbar.css";
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -10,7 +9,7 @@ function NavBar() {
   return (
     <Navbar bg="dark" variant={"dark"} expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Menú</Navbar.Brand>
+        <Navbar.Brand href="#" className='titulo'>&nbsp;SPACEMAN &nbsp; <spam className="titulo2"> Coleccionista de flores</spam></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

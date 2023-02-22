@@ -14,13 +14,8 @@ function Boton() {
       showCancelButton: true,
       confirmButtonText: 'Confirmado',
       denyButtonText: `No tengo REPROCAN`,
-      background: '#fff url(/fondoalert.jpeg)',
-      backdrop: `
-      rgba(0,0,123,0.4)
-      url("/fondoalert.jpeg")
-      left top
-      no-repeat
-      `,
+      background: 'rgb(62, 209, 17)',
+      
     }).then((result) => {
       
       if (result.isConfirmed) {
