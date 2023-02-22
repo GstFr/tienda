@@ -1,10 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "../src/componentes/navbar/navbar";
+import Navbar from "../src/componentes/navbar/navbar";
 import Fondo1 from "./fondo1.mp4"
 import Boton from "../src/componentes/boton/boton";
 import  ItemListContainer from "./componentes/ItemListContainer/lista";
-import Navbar from "../src/componentes/navbar/navbar"
+
 
 
 function App() {
