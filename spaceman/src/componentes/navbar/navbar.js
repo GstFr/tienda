@@ -7,9 +7,9 @@ import Carrito from "../carrito/carrito";
 
 function NavBar() {
   return (
-    <Navbar bg="dark" variant={"dark"} expand="lg">
+    <Navbar className="fondonav" bg="dark" variant={"dark"} expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#" className='titulo'>&nbsp;SPACEMAN &nbsp; <spam className="titulo2"> Coleccionista de flores</spam></Navbar.Brand>
+        <Navbar.Brand href="#" className='titulo'>SPACEMAN <br></br> <spam className="titulo2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coleccionista de flores&nbsp;&nbsp;&nbsp;&nbsp;</spam></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -17,7 +17,7 @@ function NavBar() {
             style={{ maxHeight: '150px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Quienes somos</Nav.Link>
+            <Nav.Link href="#action1">&nbsp;&nbsp;Quienes somos&nbsp;&nbsp;</Nav.Link>
             
             <NavDropdown title="Genéticas" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Automáticas</NavDropdown.Item>
@@ -29,7 +29,7 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#action2">Contacto</Nav.Link>
+            <Nav.Link href="#action2">&nbsp;&nbsp;Contacto</Nav.Link>
           </Nav>
           <Carrito className="d-flex">
             
