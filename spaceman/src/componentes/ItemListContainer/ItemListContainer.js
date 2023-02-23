@@ -1,26 +1,39 @@
-
+import React, {useEffect, useState} from 'react';
+import {getFetch} from './ItemList/ItemList';
 import "./ItemListContainer.css";
 import ItemList from "./ItemList/ItemList";
-function ItemListContainer({greeting}) {
 
+function ItemListContainer () {
 
+const [Productos, setProductos] = useState([])
+const [loading, setLoading] = useState(true)
+  
+useEffect(()=>{
 
+getFetch
 
+.then((respuesta)=> setProductos(respuesta))
+.catch (err => console.log(err))
+.finally(() => setLoading(false))
+},[])
 
 
 
   return (
     
-    <div className="item-list-container">
-    <h2>{greeting}Productos</h2>
-
-
-
-
-
-
-  </div>
-    
+    <div>
+      {
+        loading ?
+        < h1 >Esperanos unos segundos...</h1>
+        :
+        <div>
+          <h1>Productos de temporada</h1>
+          <div className='lista'>
+            <ItemList prod = {Productos}/>
+          </div>
+        </div>
+      }
+    </div>
   );
 }
 
