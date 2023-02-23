@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <Navbar className="fondonav" bg="dark" variant={"dark"} expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#" className='titulo'>SPACEMAN <br></br> <spam className="titulo2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coleccionista de flores&nbsp;&nbsp;&nbsp;&nbsp;</spam></Navbar.Brand>
+        <Navbar.Brand href="#" className='titulo'>SPACEMAN <br></br> <span className="titulo2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coleccionista de flores&nbsp;&nbsp;&nbsp;&nbsp;</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
