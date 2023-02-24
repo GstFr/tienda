@@ -13,7 +13,10 @@ function App() {
     
 <Navbar/>
 <div className="fondo">
+
 <ItemListContainer  />
+
+</div>
       <header className="App-header">
        
         <video className="video" autoPlay muted loop src={Fondo1} />
@@ -23,7 +26,8 @@ function App() {
       </header>
       
       </div>
-    </div>
+
+    
   );
 }
 

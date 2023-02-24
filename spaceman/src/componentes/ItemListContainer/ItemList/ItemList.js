@@ -1,8 +1,8 @@
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import Item from "./Item/Item";
 import "./ItemList.css"
-
+import Stack from 'react-bootstrap/Stack';
 
 const productos = [
     {
@@ -40,11 +40,14 @@ else {
 ;
 function Itemlist ({prod}) {
 return (
-    <div className="listaProductos">
-    
-  {prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)}
+ 
+<Stack direction="horizontal" gap={3} className="listaProductos">
+    {
+  prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)
+  }
    
-   </div>
+
+  </Stack>
 )
 }
 
