@@ -1,27 +1,27 @@
 
 import React from "react";
 import Item from "./Item/Item";
-
+import "./ItemList.css"
 
 
 const productos = [
     {
         id:0,
         nombre: "manzana" ,
-        precio: 20
-
+        precio: 20,
+        imagen :"./product1.jpeg",
     },
     {
         id: 1,
         nombre: "pera" ,
-        precio: 30
-
+        precio: 30,
+        imagen :"./producto2.jpeg",
     },
     {
-        id:0,
+        id:2,
         nombre: "naranja" ,
-        precio: 50
-
+        precio: 50,
+        imagen :"./producto3.jpeg",
     },
 
 ]
@@ -40,9 +40,11 @@ else {
 ;
 function Itemlist ({prod}) {
 return (
-   
-    prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)
+    <div className="listaProductos">
     
+  {prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)}
+   
+   </div>
 )
 }
 

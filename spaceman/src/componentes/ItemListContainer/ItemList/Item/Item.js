@@ -1,14 +1,17 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import { useState } from "react";
+import './Item.css'
 
 function Item ({prod}){
+
+
   const [contador, setCount] = useState(0);
 
     return(
      
-        <Card   style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card className="cartas"  style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={ prod.imagen} />
         <Card.Body>
           <Card.Title>{prod.nombre}</Card.Title>
           <Card.Text>
@@ -24,7 +27,9 @@ function Item ({prod}){
                     </div>
         </Card.Body>
       </Card>
+      
      
+    
     );
 }
 
