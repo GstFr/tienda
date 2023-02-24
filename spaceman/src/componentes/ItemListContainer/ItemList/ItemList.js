@@ -38,10 +38,11 @@ else {
 
 })
 ;
-function Itemlist ({Prod}) {
+function Itemlist ({prod}) {
 return (
    
-    Prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)
+    prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)
+    
 )
 }
 

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {getFetch} from './ItemList/ItemList';
 import "./ItemListContainer.css";
 import ItemList from "./ItemList/ItemList";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ItemListContainer () {
 
@@ -26,9 +27,9 @@ getFetch
         loading ?
         < h1 >Esperanos unos segundos...</h1>
         :
-        <div>
+        <div >
           <h1>Productos de temporada</h1>
-          <div className='lista'>
+          <div >
             <ItemList prod = {Productos}/>
           </div>
         </div>
