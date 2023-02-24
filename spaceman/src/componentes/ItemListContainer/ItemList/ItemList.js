@@ -41,13 +41,13 @@ else {
 function Itemlist ({prod}) {
 return (
  
-<Stack direction="horizontal" gap={3} className="listaProductos">
+<div className="listaProductos">
     {
   prod.map((prod) => <Item key = {prod.id} prod = {prod}/>)
   }
    
 
-  </Stack>
+  </div>
 )
 }
 
