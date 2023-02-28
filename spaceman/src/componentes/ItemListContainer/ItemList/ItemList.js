@@ -7,21 +7,21 @@ import "./ItemList.css"
 const productos = [
     {
         id:0,
-        nombre: "manzana" ,
+        nombre: "Big Devil X 3" ,
         precio: 20,
-        imagen :"../../public/imagenesprod/product1.jpeg",
+        imagen :"/imagenesprod/product1.jpeg",
     },
     {
         id: 1,
-        nombre: "pera" ,
+        nombre: "Exprimido naranja X 3" ,
         precio: 30,
-        imagen :"../../public/imagenesprod/producto2.jpeg",
+        imagen :"/imagenesprod/producto2.jpeg",
     },
     {
         id:2,
-        nombre: "naranja" ,
+        nombre: "White Widow X 3" ,
         precio: 50,
-        imagen :"../../public/imagenesprod/producto3.jpeg",
+        imagen :"/imagenesprod/producto3.jpeg",
 
 }
 ]

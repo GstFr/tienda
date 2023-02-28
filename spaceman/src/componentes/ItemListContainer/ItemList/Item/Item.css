@@ -2,4 +2,44 @@
   margin: 10% ;
   padding: 10%;
 width: 18rem;
+background-color:rgba(62, 209, 17, 0.416);
+color: rgb(54, 4, 4);
+
+}
+.nombreprod {
+
+font-size: x-large;
+
+}
+.precioprod{
+font-size: xx-large;
+}
+
+.productos__content-cantidad {
+  display: flex;
+  justify-content: center;
+  border : 3px solid black;
+  border-left: 7px solid black;
+}
+
+.productos__content-cantidad-contador {
+  display: flex;
+  align-items: center;
+  background-color: rgb(62, 209, 17);
+  padding: 10px;
+  color: rgb(0, 0, 0);
+ 
+}
+
+.productos__content-cantidad-contador p {
+  margin: .5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.productos__content-cantidad-contador p:hover {
+  color: white;
+}
+.botonagregar{
+  background-color: rgb(62, 209, 17);
 }

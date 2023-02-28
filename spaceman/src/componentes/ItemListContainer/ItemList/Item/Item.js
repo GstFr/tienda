@@ -13,8 +13,8 @@ function Item ({prod}){
         <Card className="cartas"  >
         <Card.Img variant="top" src={ prod.imagen} />
         <Card.Body>
-          <Card.Title>{prod.nombre}</Card.Title>
-          <Card.Text>
+          <Card.Title className="nombreprod">{prod.nombre}</Card.Title>
+          <Card.Text className="precioprod">
             $ {prod.precio}
           </Card.Text>
           <div className="productos__content-cantidad">
@@ -23,7 +23,7 @@ function Item ({prod}){
                             <h4>{ contador }</h4>
                             <p onClick={ () => {if (contador < 7) {setCount (contador => contador +1)}} }>+</p>
                         </div>
-                        <button href="#">Agregar al carrito</button>
+                        <button className="botonagregar" >Agregar al carrito</button>
                     </div>
         </Card.Body>
       </Card>
